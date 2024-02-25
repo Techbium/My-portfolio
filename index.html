@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+
+
+<header style="animation-name: Pageanimate;
+animation-duration: 2s;
+animation-timing-function: ease-in-out;">
+  <nav class="nav"  style="display:none">
+    <button class="toggler" id="toggler-click" style="animation-name: Pageanimate;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;">
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+    </button>
+
+      <p id="nav-logo">Techbium</p>
+      <br><br>
+    <div class="nav-links">
+      <a href="#home" class="nav-item" onclick="killNav()">Home</a><br>
+      <a href="#about" class="nav-item" onclick="killNav()">About</a><br>
+      <a href="#skill" class="nav-item" onclick="killNav()">Services</a><br>
+      <a href="#projects" class="nav-item" onclick="killNav()">projects</a><br>
+      <!-- <a href="#Testimonial" class="nav-item" onclick="killNav()">Testimonial</a><br> -->
+      <a href="#contact" class="nav-item" onclick="killNav()">contact</a><br>
+    </div>
+    <a href="./js/OlatunjiCv.doc" download="OlatunjiCv.doc">
+       <input type="button" value="Download CV" id="cv-nav">
+    </a>
+    
+  </nav>
+</header>
+
+<div class="boxMe" ></div>
+
+<body>
+<div id="bodym">    
+
+<div class="hero container" id="home">
+<div class="hero-info">
+            <span id="fixed-header">
+              <div class="resume-toggler">  
+                <a href="./js/My CV.pdf" download="Olatunji-CV"> <p class="Resume">Resume</p></a>
+                <button class="toggler" id="toggler-click-two" >
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+              </div>  
+               <p id="Logo">Techbium</p>
+            </span>
+
+            <div class="hero-img" >
+              <img src="./css/pic/IMG_20231215_073034-removebg-preview 1.png" alt="olatunji" style="max-width:25rem;float:right;margin-top: -100px;"/>   
+            </div>
+
+
+
+
+   <div id="homew" onclick="killNav()">
+      <div class="hero-description-title-hero-story">      
+         <p class="hero-description">Web designer</p>
+         <h1 class="title">Olayiwola Olatunji</h1>
+         <p class="hero-story">As a dedicated web designer with a passion for creating intuitive and visually appealing digital experiences. With a keen eye for detail and a commitment to user-centric design, i strive to elevate the usability and aesthetics of every project i undertake.</p>
+      </div>    
+
+
+      <br>
+  <p id="read-more" onclick="aboutShow()" style="user-select:none; color:yellow;margin-left:10px" >ABOUT ME ></p>
+  <p id="read" onclick="aboutKill()" style="user-select:none; display:none;color:yellowgreen;margin-left:10px">ABOUT ME ---</p>
+            <p class="at-technbium">Follow me @Techbium</p>
+           
+               <img src="./css/pic/Group 1.svg" id="icons">
+  </div>         
+         <!-- <a href="#services" class="btn hero-btn">Services</a> -->
+</div>
+        
+       
+</div>
+
+  <!-- About section -->
+
+  <section class="about-container" id="about" style="display:none; clear: both;" onclick="killNav()"> 
+
+    <div class="about-info">
+      <h2 class="secondery-title" style="font-size:2rem;font-family:monospace;">About Me</h2><br><br>
+      <div class="about-info2">
+      <p class="description">
+        As a dedicated web designer with a passion for creating intuitive and visually appealing digital experiences. With a keen eye for detail and a commitment to user-centric design, i strive to elevate the usability and aesthetics of every project i undertake..
+      </p>
+
+      <p class="description">
+        <h3 style="text-decoration:underline; margin-top:40px; margin-bottom: 30px;text-align: center;">Delux media 2021-2023</h3>
+
+        I bring valuable experience from my tenure at Deluxe Media, Where i honed my skills as a graphic designer. During this time, immersed myself in creative process, gaining proficiency in Photoshop. This hands-on experience not only enriched a foundation for crafting engaging and dynamic digital content. My role at Deluxe Media Allowed me to explore the intersection of aesthetics and functionality, laying the ground-work for my transition into the world of UI/UX design.  
+      </p>
+
+      <p class="description">
+        <h3 style="text-decoration:underline; margin-top:40px; margin-bottom: 30px;text-align: center;">Flip to tech 2023-2024</h3>
+
+        My journey into the tech realm commenced at flip to tech, a pivotal chapter where i embanked in my coding odyssey. Here, i delved into the core language of the web, mastering the intricacies of HTML, CSS and JavaScript. This foundational experience also helped me gain more understanding of UI/UX design.
+            i seized the opportunity to harness the power of Figma, refining my proficiency in creating seamless and user-friendly interface. This hands-on exposure to coding and design principles became the catalyst for my holistic approach to crafting digital experience. 
+      </p>
+          <div style="display:flex;justify-content: center;">
+          <input type="button" value="Hire me" id="hire-me-btn" onclick="sendMessage()" style="background-color:green; font-weight:700;font-size:1.5rem; border-radius: 10px; border-style: none; color:white; width:200px; margin-top: 10px;">
+          </div>
+        </div>
+    </div>
+  </section>
+
+<section class="Skill-container" id="skill" style="clear:both" onclick="killNav()">  
+  <div class="services-container" id="services">
+        <div class="services-header">
+          <h2 class="secondery-title" style="font-size:2rem;font-family:monospace;">Services</h2>
+        </div>
+  <div id="skill-flex">  
+    <div class="skillset">
+    <img src="./css/pic/s3.png.svg">
+    <h3>Website Design</h3>
+    <p class="description">
+        Creating visually stunning and user-friendly web-sites.
+    </p>
+    </div> 
+
+    <div class="skillset">
+    <img src="./css/pic/s2.png.svg">
+    <h3>UI/UX Design</h3>
+    <p class="description">
+        Transforming concepts into intuitive and visually striking interfaces.
+    </p>
+    </div>
+    
+    <div class="skillset">
+    <img src="./css/pic/s1.png.svg">
+    <h3>Web Development</h3>
+    <p class="description">
+        Building robust-responsive websites with focus on seamless user experience.
+    </p>
+    </div>
+  </div>      
+        <div style="display:flex;justify-content: center;">
+          <input type="button" value="Hire me" id="hire-me-btn" onclick="sendMessage()" style="background-color:green; font-weight:700;font-size:1.5rem; border-radius: 10px; border-style: none; color:white; width:200px; margin-top: 10px;">
+          </div>
+  </div>        
+</section> 
+
+
+<section class="projects-container" id="projects" onclick="killNav()">
+    <div class="projects-header">
+      <h2 class="secondery-title" style="margin-bottom:20px;font-size:2rem;font-family:monospace;">Projects </h2>
+
+      <!-- <div class="projects-tab">
+        <button class="projects-tab-btn projects-tab-btn-active" id="all">
+          All
+        </button>
+        <button class="projects-tab-btn" id="design">Design</button>
+        <button class="projects-tab-btn" id="seo">SEO</button>
+        <button class="projects-tab-btn" id="ui-ux">UI/UX</button>
+      </div> -->
+    </div>
+
+
+    <div class="grid-projects">
+      <div id="proj1"> 
+        <a href="#pro102"> 
+          <img src="./css/pic/Teejames youtube page 2.png "  alt=""  style="width:19vh;"/>
+        </a>
+      </div>
+
+      <div class="proj2-j3">
+     <div id=proj2 >
+      <a href="#pro104"> 
+        <img src="./css/pic/MacBook Air - 1 SALES PAGE.png"  alt=""  style="width:25vh;"/>
+      </a>
+        
+      </div>
+      
+      <div id=proj3>
+        <a href="#pro103"> 
+          <img src="./css/pic/MacBook Pro 16_ - 1 MONIE POINT NOT ANY MORE.png" alt=""  style="width:25vh;"/>
+        </a>
+      </div>
+     </div>
+
+      <div id=proj4  style="align-self:center">
+        <a href="#pro101"> 
+          <img src="./css/pic/brotunde portfolio 2.png" alt=""  style="width:30vh;"/>
+        </a>
+      </div>
+     
+ 
+    </div>
+    
+</section>
+
+<section class="project-two" onclick="killNav()">
+
+    <div class="Project-tab">
+        <div>  
+      
+
+          <img src="./css/pic/brotunde portfolio 2.png" alt="" id="pro101" />
+          <h2 class="tetiary-title">Desktop portfolio</h2>
+          <p>Crafted a visually stunning portfolio design for a client, seamlessly blending creativity and functionality. Figma served as a canvas to bring this digital showcase to life.</p>
+        </div>
+        
+        <br><br><br>
+        <div>
+         
+         
+          <img src="./css/pic/Teejames youtube page 1.png " alt="" id="pro102" />
+          <h2 class="tetiary-title">Dr teejames</h2>
+          <p>Developed a personalized YouTube gate-way for a client, enhancing user accessibility with direct links to their main channel. A sleek and user friendly plat form designed to streamline the views experience. </p>
+        </div>
+        
+        <br><br><br>
+        <div>         
+          <img src="./css/pic/MacBook Pro 16_ - 1 MONIE POINT NOT ANY MORE.png" alt="" id="pro103"/>
+          <h2 class="tetiary-title">Simple Landing page</h2>
+          <p>Designed a captivating landing page, a personal project showcasing my creative flair and UI/UX skill. Every element crafted to captivate and convert. </p>
+        </div>
+       <br><br><br>
+        <div>
+          <img src="./css/pic/MacBook Air - 1 SALES PAGE.png" alt="" id="pro104"/>
+          <h2 class="tetiary-title">Landing page project</h2>
+          <p>Venture into Web design mastery with a project assignment during My days at flip to tech. From concept to execution, this personal project reflect new found skill and dedication.</p>
+        </div>
+   
+      </div>
+</section>
+
+<section class="Testimonial-section" id="Testimonial"  style="display:none" onclick="killNav()">
+  <div id="testimonial-line" >
+    <div class="Testimonial">
+        <h2 class="secondery-title">Testimonial</h2>
+      </div>
+    <img src="./css/pic/stark 1.jpg">
+    <H2>Tunde stark</H2>
+    <p>"Techbium creates flawless designs, delivered promptly. Highly-recommended".</p>
+
+    <span class="testi-circle">
+    <div id="circle"  style="color:#1ec40e"></div>
+    <div id="circle2" class="circle-stark"onclick="testmonialbring()"></div>
+    </span>
+  </div>
+</section>
+
+<section class="Testimonial-section2" style="display:none" onclick="killNav()">
+  <div id="testimonial-line2">
+          <div class="Testimonial2">          
+            <h2 class="secondery-title">Testimonial</h2>
+          </div>
+        <img src="./css/pic/Ellipse 4.jpg">
+        <H2>Teejames</H2>
+        <p>"Top notch web-designer seamless functionality and timely delivery"</p>
+
+        <span class="testi-circle">
+        <div id="circle" class="circle-james" onclick="testmonialkill()"></div>
+        <div id="circle2"  style="color:#1ec40e"></div>
+        </span>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<br><br>
+<section class="contact" id="contact" onclick="killNav()">
+  <div class="container">    
+      <h1 style ="display:block">Contact</h1><br><br>
+                  <div id="sub">
+                     
+                      <input type="button" id="phonebtn" value="Chat now" onclick="sendMessage()">
+                      <br><br>
+                     
+              <div class="form">
+                             
+                   
+                      <h2>Contact me</h2>
+                      <br>
+                      <h2>+234-813-113-0472</h1> 
+     <div id="call"></div>        
+     <br><br>
+                      <h2>E-Mail me</h2>
+                      <br>
+                      <h2>Raufolatunji2@gmail.com</h2>
+      <div id="mail"> </div>        
+              </div> 
+              <br>
+                      <h3 style="font-size:20px;">Send a message to <br>Techbium</h3>
+  
+                  </div>
+                  <div id="contact-container">    
+                      <input Placeholder="Name" type="text" id="eName">
+                   
+                      <input Placeholder="Email" type="email" id="eEmail">
+                   
+                      <input Placeholder="Subject" type="text" id="eSubject">
+                      
+  
+                      <textarea class="form-control" Placeholder="Leave a message here" id="emessage" style="height: 100px"
+                      style="width:100%" id="mess"></textarea>
+                      <!-- <input Placeholder="Message"
+                      style="height :100px"> -->
+                      
+                      <input type="Button" id="subbtn" value="Send message" onclick="sendEmail()">
+                   
+                  </div>    
+          </span>            
+              </div>
+      </div>
+  
+  </div> 
+  </div>   
+  
+  <a href="#home">
+  <input id="homerunner" type="botton" value="#"></input>
+     </a>
+     
+  
+  <script src="./js/main.js"></script>
+  </section>
+</div>
+</body>
+</html>
